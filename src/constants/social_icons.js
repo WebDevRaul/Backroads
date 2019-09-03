@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {FaFacebook, FaTwitterSquare, FaSuarespace} from 'react-icons';
+import {FaFacebook, FaTwitterSquare, FaStackExchange} from 'react-icons/fa';
 
 export default [
   {
@@ -12,7 +12,7 @@ export default [
     url: 'https://google.com'
   },
   {
-    icon: <FaSuarespace />,
+    icon: <FaStackExchange />,
     url: 'https://google.com'
   }
 ]

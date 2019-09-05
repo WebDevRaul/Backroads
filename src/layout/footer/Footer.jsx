@@ -10,12 +10,10 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <div className='links'> 
-        <ul>
-          {links.map((item, index) => {
-            const { path, text } = item;
-            return <li key={index}><Link to={path} />{text}</li>
-          })}
-        </ul>
+        {links.map((item, index) => {
+          const { path, text } = item;
+          return <li key={index}><Link to={path} />{text}</li>
+        })}
       </div>
       <div className='icons'>
         {icons.map((item, index) => {

@@ -13,7 +13,16 @@ $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 $defaultBcg: url('../images/defaultBcg.jpeg');
 
 :export {
-  primaryColor: $primaryColor
+  primaryColor: $primaryColor;
+  mainWhite: $mainWhite;
+  offWhite: $offWhite;
+  mainBlack: $mainBlack;
+  mainGrey: $mainGrey;
+  darkGrey: $darkGrey;
+  mainTransition: $mainTransition;
+  mainSpacing: $mainSpacing;
+  lightShadow: $lightShadow;
+  darkShadow: $darkShadow;
 }
 
 * {

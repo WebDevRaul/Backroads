@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '../layout/Layout';
 import Hero from '../components/hero/Hero';
 import Banner from '../components/banner/Banner';
+import About from '../components/index_page/about/About';
 
 export default () => (
   <Layout>
@@ -14,5 +15,6 @@ export default () => (
         <Link to='/tours' className='btn-white'>explore tours</Link>
       </Banner>
     </Hero>
+    <About />
   </Layout>
 )

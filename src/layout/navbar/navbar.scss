@@ -1,3 +1,5 @@
+@import '../layout.scss';
+
 .navbar {
 
   .nav-header {
@@ -16,7 +18,7 @@
       }
 
       .logo-icon {
-        color: var(--primaryColor);
+        color: $primaryColor;
         font-size: 1.5rem;
       }
     }
@@ -24,7 +26,7 @@
 
   .nav-links {
     list-style-type: none;
-    transition: var(--mainTransition);
+    transition: $mainTransition;
     height: 0;
     overflow: hidden;
 
@@ -33,13 +35,13 @@
       padding: 1rem 1.25rem;
       text-decoration: none;
       text-transform: capitalize;
-      color: var(--mainBlack);
-      transition: var(--mainTransition);
+      color: $mainBlack;
+      transition: $mainTransition;
       font-weight: bold;
-      letter-spacing: var(--mainSpacing);
+      letter-spacing: $mainSpacing;
 
       &:hover {
-        color: var(--primaryColor);
+        color: $primaryColor;
         cursor: pointer;
       }
     }
@@ -83,13 +85,13 @@
         line-height: 0;
 
         a {
-          color: var(--primaryColor);
+          color: $primaryColor;
           margin: 0 0.5rem;
           font-size: 1.2rem;
-          transition: var(--mainTransition);
+          transition: $mainTransition;
 
           &:hover {
-            color: var(--mainBlack);
+            color: $mainBlack;
             transform: translateY(-5px);
           }
         }

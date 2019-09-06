@@ -1,7 +1,9 @@
+@import '../../layout/layout.scss';
+
 .banner {
   text-align: center;
-  letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
+  letter-spacing: $mainSpacing;
+  color: $mainWhite;
 
   h1 {
     font-size: 3.3rem;

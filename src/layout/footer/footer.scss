@@ -1,23 +1,25 @@
+@import '../layout.scss';
+
 .footer {
-  background: var(--mainBlack);
+  background: $mainBlack;
   padding: 2rem;
   text-align: center;
-  color: var(--mainWhite);
+  color: $mainWhite;
 
   .links {
     li {
       display: inline-block;
       text-decoration: none;
       text-transform: uppercase;
-      color: var(--mainWhite);
+      color: $mainWhite;
       margin: 0.5rem 1rem;
-      letter-spacing: var(--mainSpacing);
-      transition: var(--mainTransition);
+      letter-spacing: $mainSpacing;
+      transition: $mainTransition;
       font-weight: bold;
 
       &:hover {
         cursor: pointer;
-        color: var(--primaryColor);
+        color: $primaryColor;
       }
     }
   }
@@ -26,17 +28,17 @@
       display: inline-block;
       margin: 1rem;
       font-size: 1.3rem;
-      color: var(--mainWhite);
-      transition: var(--mainTransition);
+      color: $mainWhite;
+      transition: $mainTransition;
 
       &:hover {
-        color: var(--primaryColor);
+        color: $primaryColor;
       }
     }
   }
   .copyright {
     text-transform: capitalize;
-    letter-spacing: var(--mainSpacing);
+    letter-spacing: $mainSpacing;
     line-height: 2;
   }
 }

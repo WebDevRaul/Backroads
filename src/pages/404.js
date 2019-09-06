@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import Layout from '../layout/Layout';
 import Banner from '../components/banner/Banner';
-import { primaryColor } from '../layout/variables.scss';
+import { primaryColor } from '../layout/layout.scss';
 
 const errorStyle = {
   backgroundColor: primaryColor,
@@ -16,7 +16,6 @@ const errorStyle = {
 const error = () => {
   return (
     <Layout>
-      {console.log(primaryColor)}
       <header style={errorStyle}>
         <Banner title='oops it`s a dead end'>
           <Link to='/' className='btn-white'>back to home page</Link>

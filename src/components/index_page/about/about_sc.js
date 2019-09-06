@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { lightShadow } from '../../../layout/layout.scss';
+import { primaryColor, lightShadow } from '../../../layout/layout.scss';
 
 const Wrapper = styled.section`
   padding: 4rem 0;
@@ -18,6 +18,7 @@ const Wrapper = styled.section`
 
       img {
         width: 100%;
+        height: 400px;
         display: block;
         box-shadow: ${lightShadow};
       }
@@ -43,14 +44,6 @@ const Wrapper = styled.section`
 
       .about-img {
         margin: 0;
-
-        .img-container {
-          max-height: 500px;
-    
-          img {
-            max-height: 500px;
-          }
-        }
       }
       .abouot-info {
         margin: 0;
@@ -67,7 +60,7 @@ const Wrapper = styled.section`
       position: absolute;
       width: 100%;
       height: 100%;
-      border: 3px solid var(--primaryColor);
+      border: 3px solid ${primaryColor};
       box-sizing: border-box;
       top: -16px;
       left: -16px;

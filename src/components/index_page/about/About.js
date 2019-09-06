@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Title from '../../common/title/Title';
-import img from '../../../images/defaultBcg.jpeg';
 import Wrapper from './about_sc';
+
+import defaultBcg from '../../../images/defaultBcg.jpeg'
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
       <div className='about-center'>
         <article className='about-img'>
           <div className='img-container'>
-            <img scr={img} alt='default-background' />
+            <img src={defaultBcg} alt='default background' />
           </div>
         </article>
         <article className='about-info'>

@@ -7,7 +7,7 @@ const Banner = ({ title, info, children }) => {
   return (
     <div className='banner'>
       <h1>{title}</h1>
-      {children}
+        {children}
     </div>
   )
 };

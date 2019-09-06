@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '../layout/Layout';
-import Banner from '../components/banner/Banner';
+import Banner from '../components/common/banner/Banner';
 import { primaryColor } from '../layout/layout.scss';
 
 const errorStyle = {

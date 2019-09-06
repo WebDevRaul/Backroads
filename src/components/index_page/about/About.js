@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from './title/Title';
+import Title from '../../common/title/Title';
 import img from '../../../images/defaultBcg.jpeg';
 import Wrapper from './about_sc';
 

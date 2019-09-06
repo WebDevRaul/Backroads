@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primaryColor, mainBlack } from '../../../../layout/layout.scss';
+import { primaryColor, mainBlack } from '../../../layout/layout.scss';
 
 const Wrapper = styled.div`
   text-transform: uppercase;

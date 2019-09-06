@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from 'gatsby';
 
 import Layout from '../layout/Layout';
-import Hero from '../components/hero/Hero';
-import Banner from '../components/banner/Banner';
+import Hero from '../components/index_page/hero/Hero';
+import Banner from '../components/common/banner/Banner';
 import About from '../components/index_page/about/About';
+import Services from "../components/index_page/about/service/Services";
 
 export default () => (
   <Layout>
@@ -16,5 +17,6 @@ export default () => (
       </Banner>
     </Hero>
     <About />
+    <Services />
   </Layout>
 )

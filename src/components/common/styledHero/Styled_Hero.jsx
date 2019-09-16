@@ -16,10 +16,10 @@ const StyledHero = ({ img, className, children, home }) => {
 };
 
 StyledHero.propTypes = {
-  img: PropTypes.string.isRequired,
+  img: PropTypes.object.isRequired,
   className: PropTypes.string.isRequired,
   children: PropTypes.object.isRequired,
-  home: PropTypes.bool.isRequired
+  home: PropTypes.string.isRequired
 }
 
 export default StyledHero;

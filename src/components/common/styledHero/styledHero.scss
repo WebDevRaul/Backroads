@@ -2,13 +2,20 @@
   background-position: center;
   background-size: cover;
   opacity: 1 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 50vh;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .bg-linear {
-  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7));
-  min-height: calc(100vh - 62px) !important;
+  div {
+    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7));
+    min-height: calc(100vh - 62px) !important;
+    width: 100%;
+  }
 }

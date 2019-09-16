@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './banner.scss';
 
-const Banner = ({ title, info, children }) => {
+const Banner = ({ title, children }) => {
   return (
     <div className='banner'>
       <h1>{title}</h1>
@@ -12,13 +12,9 @@ const Banner = ({ title, info, children }) => {
   )
 };
 
-Banner.defaultProps = {
-  info: PropTypes.string
-}
-
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired
+  children: PropTypes.array.isRequired
 };
 
 export default Banner;

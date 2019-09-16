@@ -10,12 +10,14 @@ import StyledHero from "../components/common/styledHero/Styled_Hero";
 
 export default ({ data }) => (
   <Layout>
-    <StyledHero home='true' img={data.heroImage.childImageSharp.fluid} className='' >
+    <StyledHero home='true' img={data.heroImage.childImageSharp.fluid} className='bg-linear' >
       <Banner 
         title='continue exploring' 
       >
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <Link to='/tours' className='btn-white'>explore tours</Link>
+        <>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <Link to='/tours' className='btn-white'>explore tours</Link>
+        </>
       </Banner>
     </StyledHero>
     <About />

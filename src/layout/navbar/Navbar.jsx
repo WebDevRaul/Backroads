@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { FaAlignRight } from 'react-icons/fa';
 
 import Logo from '../../images/logo.svg';
-import links from '../../constants/links';
 import icons from '../../constants/social_icons';
 
 import './navbar.scss';

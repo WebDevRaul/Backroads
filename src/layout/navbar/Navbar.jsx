@@ -27,9 +27,10 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={classnames('nav-links', {'show-nav' : !isOpen})}>
-          {links.map(({ path, text }) => {
-            return <li key={text}><Link to={path} />{text}</li>
-          })}
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/tours'>Tours</Link></li>
+          <li><Link to='/blog'>Blog</Link></li>
+          <li><Link to='/contact'>Contact</Link></li>
         </ul>
         <div className='nav-social-links'>
           {icons.map((item, index) => {

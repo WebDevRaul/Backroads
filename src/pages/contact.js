@@ -3,14 +3,13 @@ import { graphql } from 'gatsby';
 import Layout from '../layout/Layout';
 
 import StyledHero from "../components/common/styledHero/Styled_Hero";
+import Contact from '../components/contact_page/Contact';
 
 const contact = ({ data: { contactImage: { childImageSharp: { fluid } } } }) => {
   return (
     <Layout>
-      <StyledHero img={fluid}>
-        <>
-        </>
-      </StyledHero>
+      <StyledHero img={fluid} />
+      <Contact />
     </Layout>
   )
 }

@@ -9,18 +9,21 @@
 
   .links {
     li {
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $mainWhite;
-      margin: 0.5rem 1rem;
-      letter-spacing: $mainSpacing;
-      transition: $mainTransition;
-      font-weight: bold;
-
-      &:hover {
-        cursor: pointer;
-        color: $primaryColor;
+      display: inline-flex;
+      a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $mainWhite;
+        margin: 0.5rem 1rem;
+        letter-spacing: $mainSpacing;
+        transition: $mainTransition;
+        font-weight: bold;
+  
+        &:hover {
+          cursor: pointer;
+          color: $primaryColor;
+        }
       }
     }
   }

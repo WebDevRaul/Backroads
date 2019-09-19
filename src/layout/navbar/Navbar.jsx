@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { FaAlignRight } from 'react-icons/fa';
 
 import Logo from '../../images/logo.svg';
 import icons from '../../constants/social_icons';
+import links from '../../constants/links';
 
 import './navbar.scss';
 
@@ -26,10 +27,7 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={classnames('nav-links', {'show-nav' : !isOpen})}>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/tours'>Tours</Link></li>
-          <li><Link to='/blog'>Blog</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
+          {links.map(({ path, text }, index) => <li key={index}><AniLink fade to={path}>{text}</AniLink></li>)}
         </ul>
         <div className='nav-social-links'>
           {icons.map((item, index) => {

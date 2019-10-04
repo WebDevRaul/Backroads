@@ -7,6 +7,7 @@ import Banner from '../components/common/banner/Banner';
 import About from '../components/index_page/about/About';
 import Services from "../components/index_page/about/service/Services";
 import StyledHero from "../components/common/styledHero/Styled_Hero";
+import FeaturedTours from "../components/index_page/feturedTours/FeaturedTours";
 
 
 export default ({ data }) => (
@@ -23,6 +24,7 @@ export default ({ data }) => (
     </StyledHero>
     <About />
     <Services />
+    <FeaturedTours />
   </Layout>
 ); 
 
